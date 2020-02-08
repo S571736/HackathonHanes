@@ -29,6 +29,9 @@
 bin/
 obj/
 
+# LibreOffice locks
+.~lock.*#
+
 # Sondre
 .ipynb_checkpoints
 Archive
