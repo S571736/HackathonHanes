@@ -40,7 +40,8 @@ We went through, filtered, and classified some of the data, in order to produce 
 \section{Classification and Filtering of Data}
 
 The field "cause\_of\_leaving" was of some interest to us. The problem we had was that there was approximatlly 87.000 records, and almost as many causes for leaving. 
-We therefore spent a significant amount of time classifing the differnent reasons for leaving. These were seperated into the following categories: remains on ship, discharged, shipwreck, illness, drowned, deceased, juristical reasons, deserted, transferred, hospitalised, abandoned, ship laid up, injured, and other. 
+We therefore spent a significant amount of time classifing the differnent reasons for leaving.
+These were seperated into the following categories: remains on board, discharged, did not join, shipwreck, illness, drowned, deceased, juristical reasons, deserted, transferred, hospitalised, abandoned, transferred, injured, and other. 
 
 These classifications are not perfect and because data is missing, some data is hard to classify, and the semi-manual methodology used, it means that these classifications are approximates. However they still give some insight into the reasons why people left the ship.
 
@@ -53,25 +54,77 @@ It should be noted that we would have wanted to explore different methods and fi
 \section{Results, Graphs, and Findings}
 
 \subsection{Age Distribution}
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.9\textwidth]{age}
+  	\caption{Age distribution for seamen when they joined the ship}
+\end{figure}
 
 Based on the graph presented here, we see that the age onboard of the ships are quite diverse. The youngest in the dataset was 10, and the oldest was 78 at the time of joining the ship. The curve seems to follow a normal distrubution peaking around 20 years old.
 
 \subsection{Classification of Causes of Leaving}
 
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.9\textwidth]{causes}
+  	\caption{Classified causes of leaving}
+\end{figure}
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.9\textwidth]{causes_text}
+  	\caption{Classified causes of leaving}
+\end{figure}
 
+The majority of the people were discharged. In our definition this is everyone who leaves with mutual consent, retires,is discharged, or has finished service. There is also a large prosentage that remained onboard.
+Then we come in to some of the more interesting parts.
+\paragraph{Observations:}
+\begin{itemize}
+	\item 1206 individuals signed up, but never joined the ship. We found this to be much higher than expected.
+	\item The category shipwreck involves all loss of ships regardless of wether the crew survived or not. Juristical reasons
+	\item Juristical reasons is a common category for people who left because of going to jail or being ordered by a court to leave the ship.
+	\item Hospitalized is a category for people who were hospitalized for unknown reasons
+	\item Transferred means that they were transferred to another ship or job.
+	\item Only three persons were thrown of the ship for drunkeness.
+\end{itemize}
+
+In general we were surprised of how low some of these numbers were, but they were interesting non the less.
 
 \subsection{Recruitment, Dischargement, and Time Onboard}
 
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=0.9\textwidth]{joined}
+  	\caption{Shows which months seamen joined the ship}
+\end{figure}
+
 This graph shows which months people joined the different ships and voyages. As you might can see, there is a significant increase in January and July, but there is still some spread evenly throughout the year.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{left_ship}
+  	\caption{Shows which months seamen left the ship}
+\end{figure}
 
 This graph shows which months people left the ship. There seems to be trend indicating that people return mostly around the end of December/early January and late June/early July.
 
 When we merge these together we can see an interesting picture:
 
-This seems to indicate that the a lot or most of the crew is discharged in bulks, and hired shortly afterwards. This seems to happen in January and July with 6 months difference. When we consider the time spent onboard we can also see a spike around 180 days. There is also a spike around 70-90 days. This seems to indikate that a lot of ships tended to be out for 2 to 3 or 6 months at a time, then replacing the crew afterwards.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{combi}
+  	\caption{Blue: joined, Red: left}
+\end{figure}
+
+This seems to indicate that the a lot or most of the crew is discharged in bulks, and hired shortly afterwards. This seems to happen in January and July with 6 months difference.
+This intrigued us, which made us graph the time spent onboard. As you can see on the graph below we can also see a spike around 180 days. There is also a spike around 70-90 days. This seems to indikate that a lot of ships tended to be out for 2 to 3 or 6 months at a time, then replacing the crew afterwards.
 If we compare this to the shipping-industry today, we can see that this is the case today as well.
 A lot of ships today discharges most of their crew and re-hire in set periods (every 6 months for example).
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{length}
+  	\caption{Time spent at sea}
+\end{figure}
 
 \section{Final Thoughs and Conclusions}
 
